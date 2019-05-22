@@ -1,0 +1,23 @@
+.table-color{
+    background-color: rgb(60, 143, 60);
+}
+.size{
+    height: 400px;
+    width: 600px;
+}
+.font{
+    font-family: 'Noto Serif SC', serif;
+}
+.bg-color{
+    background-color: rgb(50, 130, 50);
+    height: 100px;
+}
+.padding{
+    padding: 10px;
+}
+#table{
+    padding: 15px 50px;
+}
+img{
+    height: 100%;
+}
