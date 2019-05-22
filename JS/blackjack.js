@@ -3,9 +3,9 @@
 // Note that the listener takes as arguments the event and anonymous function  
 
 
-//////////////////////////////////
-// DEAL, HIT, STAY CLICK FUNCTIONS
-//////////////////////////////////
+/////////////////////////////////////
+// DEAL, HIT, STAY CLICK FUNCTIONS //
+/////////////////////////////////////
 
 // Deal Function
 document.getElementById("btn-deal").addEventListener("click", deal)
@@ -17,7 +17,11 @@ document.getElementById("btn-hit").addEventListener("click", hit)
 document.getElementById("btn-stay").addEventListener("click", stay)
 
 
+
+//////////
 // DEAL //
+//////////
+
 // When 'Deal' button is clicked, deal 2 cards each to: 
 // id="dealer-hand" and id="player-hand"
 // To-Do:
@@ -71,7 +75,11 @@ function deal(){
 }
 
 
+
+/////////
 // HIT //
+/////////
+
 // When 'Hit' button is clicked, deal one card to:
 // id="player-hand"
 
@@ -90,11 +98,14 @@ function dealACard() {
     playerHand.append(createImgHit);
     playerPoints += cardHit.points;
     playerScore.textContent = playerPoints;
-
 }
 
 
+
+//////////
 // STAY //
+//////////
+
 // Player doesn't want any more cards
 // Deal cards to dealer until he reaches 17 points or more
 
@@ -107,7 +118,11 @@ function stay(){
 }
 
 
+
+////////////////
 // PLAY AGAIN //
+////////////////
+
 $('#btn-playAgain').click(function() {
     $('#btn-deal').show();
     $('#btn-hit').show();
@@ -125,7 +140,11 @@ $('#btn-playAgain').click(function() {
 });
 
 
+
+///////////////
 // GAME OVER //
+///////////////
+
 function gameOver() {
     $('#btn-hit').hide();
     $('#btn-stay').hide();
