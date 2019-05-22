@@ -131,26 +131,22 @@ function deal(){
 // id="player-hand"
 
 function hit(){
+    dealACard();
+    if (playerPoints > 21) {
+        $('#messages').text('Sorry, you busted!');
+        gameOver();
+    }
+}
+
+function dealACard() {
     var cardHit = deck.pop();
     var createImgHit = document.createElement('img');
     createImgHit.setAttribute('src', cardHit.cardImg);
     playerHand.append(createImgHit);
     playerPoints += cardHit.points;
+    playerScore.textContent = playerPoints;
 
-    // dealACard();
-    // if (playerPoints > 21) {
-    //     $('#messages').text('Sorry, you busted!');
-    //     gameOver();
-    // }
 }
-
-// function dealACard() {
-//     var cardHit = deck.pop();
-//     var createImgHit = document.createElement('img');
-//     createImgHit.setAttribute('src', cardHit.cardImg);
-//     playerHand.append(createImgHit);
-//     playerPoints += cardHit.points;
-// }
 
 
 // STAY //
