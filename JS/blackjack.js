@@ -3,9 +3,9 @@
 // Note that the listener takes as arguments the event and anonymous function  
 
 
-///////////////////////////// 
+//////////////////////////////////
 // DEAL, HIT, STAY CLICK FUNCTIONS
-/////////////////////////////
+//////////////////////////////////
 
 // Deal Function
 document.getElementById("btn-deal").addEventListener("click", deal)
@@ -119,6 +119,9 @@ $('#btn-playAgain').click(function() {
     $('#player-points').text('');
     $('#dealer-points').text('');
     createDeck();
+    shuffleCards(deck)
+    dealerPoints = 0;
+    playerPoints = 0;
 });
 
 
@@ -127,9 +130,4 @@ function gameOver() {
     $('#btn-hit').hide();
     $('#btn-stay').hide();
     $('#btn-playAgain').show();
-}
-
-// NEW GAME //
-function newGame() {
-
 }
