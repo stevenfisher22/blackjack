@@ -17,6 +17,14 @@ document.getElementById("btn-hit").addEventListener("click", hit)
 document.getElementById("btn-stay").addEventListener("click", stay)
 
 
+// DEAL //
+// When 'Deal' button is clicked, deal 2 cards each to: 
+// id="dealer-hand" and id="player-hand"
+// To-Do:
+// 1. Take away a card from the deck array
+// 2. Save the dealt card in two arrays: dealerCards and playerCards
+// 3. The dealerCards and playerCards arrays will be used later to calculate total points for the hand
+// 4. Display the img of the card on the page
 
 var dealerCards = []
 var playerCards = []
@@ -27,19 +35,8 @@ var playerHand = document.getElementById('player-hand')
 var dealerScore = document.getElementById('dealer-points')
 var playerScore = document.getElementById('player-points')
 
-
-// Keep track of points
 var playerPoints = 0
 var dealerPoints = 0
-
-// DEAL //
-// When 'Deal' button is clicked, deal 2 cards each to: 
-// id="dealer-hand" and id="player-hand"
-// To-Do:
-// 1. Take away a card from the deck array
-// 2. Save the dealt card in two arrays: dealerCards and playerCards
-// 3. The dealerCards and playerCards arrays will be used later to calculate total points for the hand
-// 4. Display the img of the card on the page
 
 function deal(){
     var card1 = deck.pop();
