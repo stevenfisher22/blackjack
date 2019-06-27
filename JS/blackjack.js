@@ -25,11 +25,14 @@ document.getElementById("btn-stay").addEventListener("click", stay)
 var dealerCards = []
 var playerCards = []
 
+
 var dealerHand = document.getElementById('dealer-hand')
 var playerHand = document.getElementById('player-hand')
 
+
 var dealerScore = document.getElementById('dealer-points')
 var playerScore = document.getElementById('player-points')
+
 
 var playerPoints = 0
 var dealerPoints = 0
