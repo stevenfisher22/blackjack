@@ -25,6 +25,7 @@ document.getElementById("btn-stay").addEventListener("click", stay)
 var dealerCards = []
 var playerCards = []
 
+
 var dealerHand = document.getElementById('dealer-hand')
 var playerHand = document.getElementById('player-hand')
 
